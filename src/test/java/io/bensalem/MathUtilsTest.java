@@ -33,7 +33,7 @@ class MathUtilsTest {
 	@DisplayName("Division method")
 	void testDivision() {
 		assertAll(
-				() -> assertEquals(2, mathUtils.division(4, 2),"Should return 2 instead of "+mathUtils.division(4, 2)),
+				() -> assertEquals(2, mathUtils.addition(4, 2),"Should return 2 instead of "+mathUtils.division(4, 2)),
 				() -> assertThrows(ArithmeticException.class, () -> mathUtils.division(1, 0),"The division by Zero is impossible")
 				);
 		
